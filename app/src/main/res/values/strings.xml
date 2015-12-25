@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Othello</string>
+    <string name="title_activity_battle">battle</string>
+    <string name="currentplayer">CURRENT PLAYER:</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_main">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/buttomStart"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/start"
+                android:layout_marginTop="240dp"
+                android:scaleType="centerCrop"
+                android:background="#00000000"/>
+
+        </LinearLayout>
+</ScrollView>

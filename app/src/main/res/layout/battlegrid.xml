@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_battle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:id="@+id/linearLayout"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/b" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:id="@+id/progressBarBlack"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/text_b"
+                    android:textColor="@android:color/white"
+                    android:text="2"
+                    android:textSize="16sp"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/w" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarWhite"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#fff"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="2"
+                    android:id="@+id/text_w"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:id="@+id/editText"
+                    android:text="CURRENT PLAYER:"
+                    android:visibility="visible"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:autoText="true"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/current_player" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <GridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:numColumns="8"
+                    android:stretchMode="columnWidth"
+                    android:horizontalSpacing="6dp"
+                    android:verticalSpacing="6dp"
+                    android:background="#00ffffff"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:alpha="50" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="0dp">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:text="RETRACT"
+                    android:id="@+id/buttonRegret"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.3"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:text="HINT"
+                    android:id="@+id/buttonShowHint"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.3"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:text="NEW GAME"
+                    android:id="@+id/buttonNewgame"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.4"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
